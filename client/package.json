@@ -1,5 +1,6 @@
 {
   "name": "react-tailwind-css-starter-pack",
+  "homepage": "https://abhijitabdagire.github.io/upscale",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -48,8 +49,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "server": "cd server && npm run dev",
-    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\""
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
